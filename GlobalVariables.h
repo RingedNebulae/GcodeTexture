@@ -2,7 +2,6 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <string>
 #include "GlobalVariables.h"
 
 using namespace std;
@@ -23,7 +22,6 @@ public:
 
 	void readInConfigure();
 
-	//定义控制变量
 	string inputFilePath;
 	string outputFilePath;
 	string inputGcodeName;
