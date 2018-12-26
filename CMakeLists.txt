@@ -1,0 +1,7 @@
+cmake_minimum_required (VERSION 2.6)
+project (GcodeTexture)
+find_package(CGAL REQUIRED COMPONENTS Core)
+include(${CGAL_USE_FILE})
+include_directories(${CGAL_3RD_PARTY_INCLUDE_DIRS} ${CGAL_INCLUDE_DIRS})
+add_executable(GcodeTexture GcodeTexture.cpp)
+target_link_libraries(GcodeTexture ${CGAL_3RD_PARTY_LIBRARIES} ${CGAL_LIBRARIES})
